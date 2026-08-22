@@ -1,0 +1,82 @@
+# AI Prompt Snippets
+
+24 个高频 Prompt，分为「工作效率」与「思维框架」两大类。所有文件均为独立 Markdown，可直接复制使用。
+
+> 来源：[数字生命卡兹克 — 都Agent时代了，我还是想分享给你这12个我最常用的Prompt](https://mp.weixin.qq.com/s/NAdhdFrUq9-BKelqzqpwBQ)
+
+---
+
+## 一、工作效率
+
+日常编码、写作、沟通中的即时提效工具。
+
+| Prompt | 关键词 | 说明 |
+|--------|--------|------|
+| [精简表达](refine.md) | `!p_refine` | 工作消息多版本精简 |
+| [代码审查](cr.md) | `!p_cr` | 对抗性 Code Review |
+| [总结](sum.md) | `!p_sum` | 结论先行的内容摘要 |
+| [架构分析](arch.md) | `!p_arch` | 系统/模块架构评审 |
+| [绘流程图](mermaid.md) | `!p_mermaid` | Mermaid 图约束生成 |
+| [中英互译](trans.md) | `!p_trans` | 技术术语精准翻译 |
+| [Bug 排查](bug.md) | `!p_bug` | 线上问题根因分析 |
+| [撰写技术文档](tech.md) | `!p_tech` | 结构化技术方案 |
+| [PRD 撰写](prd.md) | `!p_prd` | 产品需求文档 |
+| [第一性原理（短）](one.md) | `!p_one` | 一句话后缀提示 |
+| [结讹先行](rebuild.md) | `!p_rebuild` | 去冗余、直达结论 |
+
+---
+
+## 二、思维框架
+
+深度思考与认知升级，按使用场景分为 5 组。
+
+### 1. 问清问题
+
+| Prompt | 关键词 | 说明 |
+|--------|--------|------|
+| [苏格拉底式提问](socrates.md) | `!p_socrates` | 通过追问找到真正值得回答的问题 |
+
+### 2. 学习
+
+| Prompt | 关键词 | 说明 |
+|--------|--------|------|
+| [双层解释法](dual.md) | `!p_dual` | 小白版 + 专业版双视角学习 |
+| [反向拆解](reverse.md) | `!p_reverse` | 拆解优秀范例的成功机制 |
+| [横纵分析法](hv.md) | `!p_hv` | 纵向历史 × 横向竞品的深度研究 |
+| [事实核查](fact.md) | `!p_fact` | 拆分事实/结论/判断并逐项验证 |
+
+### 3. 解决问题
+
+| Prompt | 关键词 | 说明 |
+|--------|--------|------|
+| [专家会诉](panel.md) | `!p_panel` | 多视角互补 + 互相质疑出方案 |
+| [第一性原理](first.md) | `!p_first` | 回归基本事实重新推导路径 |
+| [跨领域借解](cross.md) | `!p_cross` | 从其他领域借用底层相通的解法 |
+| [圆桌讨论](roundtable.md) | - | 多方代表人物求真式结构化深度对话（[来源](https://gist.github.com/lijigang/a8f9cf12985d474cef15cda63f4e1892)） |
+
+### 4. 决策
+
+| Prompt | 关键词 | 说明 |
+|--------|--------|------|
+| [双向钢人论证](steelman.md) | `!p_steelman` | 为两个方向各构建最强理由再判断 |
+| [最小实验替代空想](exp.md) | `!p_exp` | 设计 7 天可完成的低成本验证实验 |
+
+### 5. 认识自己
+
+| Prompt | 关键词 | 说明 |
+|--------|--------|------|
+| [挖掘隐藏天赋](talent.md) | `!p_talent` | 多轮对话找到被忽视的底层能力 |
+| [人生设计术](life.md) | `!p_life` | 斯坦妏人生设计法 × 三个奥德赛计划 |
+
+---
+
+## 三、Raycast 快捷片段
+
+[raycast-prompt-snippets.json](raycast-prompt-snippets.json) 是上述所有 Prompt 的 Raycast Snippets 导入文件。
+
+**作用**：将每个 Prompt 注册为 Raycast 的文本片段（Snippet），在任意应用中通过关键词即可展开完整提示词，免去反复复制粘贴。
+
+**使用方式**：
+1. 安装 [Raycast](https://www.raycast.com/)（macOS）
+2. 打开 Raycast → Import Snippets → 选择此 JSON 文件
+3. 在任意输入框中键入关键词（如 `!p_cr`）即可自动展开对应 Prompt
